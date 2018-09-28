@@ -7,4 +7,4 @@ API_TOKEN = "YOUR TOKEN"
 DEFAULT_REPLY = "？"
 
 # プラグインスクリプトを置いてあるサブディレクトリ名のリスト
-PLUGINS = ['plugins']
+PLUGINS = ["plugins"]
