@@ -31,9 +31,9 @@ def get_current_forecast():
     # 取得したデータをそれぞれ変形
     date = datetime.fromtimestamp(data["currently"]["time"])
     summary = data["currently"]["summary"]
-    temperature = (data["currently"]["temperature"]-32) * 5/9   # 華氏から摂氏への変換
+    temperature = (data["currently"]["temperature"]-32) * 5 / 9   # 華氏から摂氏への変換
     humidity = data["currently"]["humidity"]
-    windSpeed = data["currently"]["windSpeed"]*1609.344/3600    # mphからm/sへの変換
+    windSpeed = data["currently"]["windSpeed"] * 1609.344 / 3600    # mphからm/sへの変換
     precipProbability = data["currently"]["precipProbability"]
     # 天気情報の文字列を作成
     forecast_str = ("{0}時{1}分時点での天気情報です。\n".format(date.hour, date.minute))
