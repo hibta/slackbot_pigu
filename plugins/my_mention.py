@@ -52,6 +52,12 @@ def oyasumi(message):
     message.reply("お休み〜")
 
 
+# "ありがとう"に反応
+@respond_to("ありがとう")
+def ieie(message):
+    message.reply("いえいえ〜")
+
+
 # ------------リアクション系------------
 
 
@@ -60,13 +66,13 @@ def oyasumi(message):
 @listen_to("good")
 @listen_to("Good")
 def iine(message):
-    message.react('+1')
+    message.react("+1")
 
 
 # ---------------反応系---------------
 
 
 # "あの"を含む投稿に反応
-@listen_to('あの')
+@listen_to("あの")
 def listen_func(message):
-    message.reply('？')
+    message.reply("？")
